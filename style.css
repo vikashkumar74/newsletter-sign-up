@@ -1,0 +1,192 @@
+body {
+  margin: 0%;
+  padding: 0%;
+
+  background-color: hsl(234, 29%, 20%);
+}
+/* main container */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 0%;
+  color: hsl(235, 18%, 26%);
+}
+ 
+ 
+.box {
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  width: 50%;
+}
+ /* left subbox */
+.left-subbox {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+
+  margin: 1%;
+  margin-left: 6%;
+}
+.para {
+  margin-bottom: 0px;
+}
+
+.image {
+    width: 5%;
+  }
+/* email section */ 
+
+.email {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.emailcheck {
+  height: 3em;
+  border-radius: 13px;
+  outline: none;
+  font-size: 15px;
+}
+#email-input {
+ 
+  padding-left: 3%;
+  border: 2px solid hsl(231, 7%, 60%);
+  cursor: pointer;
+}
+#emailbtn {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: hsl(235, 18%, 26%);
+  color: white;
+  border: none;
+}
+#emailbtn:hover {
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+  
+}
+.email-address {
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.error-msg{
+color: red;
+    position:absolute;
+   left: 60%;
+}
+ 
+/* right box section */
+
+.right-subbox {
+  padding: 2%;
+}
+
+/* desktop image */
+
+.desktop-image {
+  width: 100%;
+}
+
+/* mobile image */
+
+.mobile-image {
+  width: 100%;
+  display: none;
+}
+
+/* reponsive section */
+
+@media (max-width: 1320px) {
+  .box {
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  .box {
+    width: 60%;
+    flex-direction: column-reverse;
+  }
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+
+    display: block;
+   
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .right-subbox {
+    padding: 0px;
+  }
+}
+@media (max-width: 700px) {
+  .box {
+    width: 100%;
+  }
+}
+
+/* hidden box */
+
+/* display message box */
+.box2 {
+  display: none;
+  flex-direction: column;
+  text-align: left;
+  background-color: rgb(220, 208, 208);
+
+  width: 20%;
+  padding: 2rem;
+  border-radius: 23px;
+}
+.bold {
+  font-weight: bold;
+}
+.title2 {
+  margin: 3% 0%;
+  font-size: 2.9rem;
+  font-weight: bolder;
+}
+.box2 img {
+  width: 18%;
+}
+.dismiss-btn {
+  height: 3em;
+  border-radius: 13px;
+  width: 100%;
+  font-size: 15px;
+  border: none;
+  background-color: hsl(235, 23%, 30%);
+}
+.dismiss-btn:hover {
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+}
+@media (max-width: 400px) {
+  .box2 {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+  }
+  .dismiss-btn {
+    margin-bottom: 5%;
+  }
+  .sucess-message-box {
+    margin-top: 30%;
+  }
+}
